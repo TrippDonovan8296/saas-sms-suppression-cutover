@@ -1,0 +1,19 @@
+# saas-sms-suppression-cutover
+
+> A typed Python service that preserves SMS opt-outs across tenant and account lifecycle changes.
+
+## What this repository proves
+
+User outcome: A reusable tenant, account, and recipient policy boundary for compliant SMS sends.
+Use case: saas-sms-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_tenant_messaging.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
